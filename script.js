@@ -12,7 +12,7 @@ function loadStudents() {
         row.innerHTML = `
             <td>${student.name}</td>
             <td>${student.studentId}</td>
-            <td>${student.address}</td>
+            <td>${student.eAddress}</td>
             <td>${student.contact}</td>
             <td>
                 <button class="action-btn" onclick="editStudent(${index})">Edit</button>
@@ -29,11 +29,11 @@ function addStudent(e) {
 
     const name = document.getElementById('name').value;
     const studentId = document.getElementById('sId').value;
-    const address = document.getElementById('address').value;
+    const eAddress = document.getElementById('eAddress').value;
     const contact = document.getElementById('contact').value;
 
     const students = JSON.parse(localStorage.getItem('students')) || [];
-    students.push({ name,studentId, address, contact });
+    students.push({ name,studentId, eAddress, contact });
     localStorage.setItem('students', JSON.stringify(students));
 
     studentForm.reset();
@@ -47,7 +47,7 @@ function editStudent(index) {
 
     document.getElementById('name').value = student.name;
     document.getElementById('sId').value = student.studentId;
-    document.getElementById('address').value = student.address;
+    document.getElementById('eAddress').value = student.eAddress;
     document.getElementById('contact').value = student.contact;
 
     students.splice(index, 1);
