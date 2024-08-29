@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:gainsboro;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color:azure;
+    padding: 20px;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: #ff1414;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #f6cbcb;
+    border-radius: 4px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    width: 20%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color:bisque;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f8f8f8;
+}
+
+.action-btn {
+    cursor: pointer;
+    width: 50%;
+    height: 35px;
+    color: #fdfdfd;
+    text-decoration: none;
+    border: 1px solid gray;
+    background-color: #218838;
+    padding: 0;
+    margin-bottom: 3px;
+}
+
+.action-dbtn {
+    cursor: pointer;
+    width: 50%;
+    height: 35px;
+    color: #fdfdfd;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius:5px;
+    background-color: #ca0101;
+    padding: 0;
+}
+
+.action-btn:hover {
+    color: #fbff00;
+    background-color: #28a745;
+}
+
+
+.action-dbtn:hover{
+    color: #fbff00;
+    background-color: #d52b2b;
+}
